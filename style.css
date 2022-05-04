@@ -19,7 +19,7 @@ body {
   justify-content: space-evenly;
   width: 80%;
   padding: 0.3rem 0rem 0.3rem 0rem;
-
+ 
   align-items: center;
 }
 .wrapper {
@@ -28,6 +28,8 @@ body {
   flex-wrap: wrap;
   margin-top: 1rem;
   width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  
 }
 .logo-header {
   width: 12%;
@@ -84,7 +86,7 @@ img {
   transition: all 0.5s ease;
   list-style: none;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 2px;
   display: block;
   padding: 0;
   padding: 0.5rem;
@@ -92,7 +94,7 @@ img {
   transform: translateY(-40%);
   transition: all 1000ms;
   opacity: 0;
-  background-color: #33708e42;
+  background-color: #f6f6f7;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -140,6 +142,7 @@ i {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+   
   }
 
   .menubar {
