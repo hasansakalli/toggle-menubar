@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  bottom: 0;
+}
+body {
+  display: grid;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(0, 0, 0, 0.632);
+  width: 100%;
+  background-color: #fff;
+}
+.menubar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  padding: 0.3rem 0rem 0.3rem 0rem;
+
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  width: 100%;
+}
+.logo-header {
+  width: 12%;
+  margin-left: 3rem;
+}
+img {
+  width: 100%;
+}
+.menuList {
+  width: 100%;
+  justify-content: center;
+}
+
+.titel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: transparent;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+#categori {
+  width: 17%;
+  max-height: 90px;
+  color: #fff;
+  text-decoration: none;
+  font-size: clamp(0.3125rem, 0.1591rem + 0.8182vw, 0.875rem);
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 500ms;
+  background-color: #0099e6;
+  border-radius: 15px;
+  padding-top: 2.3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#categori:hover {
+  background-color: #33708e;
+  color: #fff;
+}
+
+.dropdown1,
+.dropdown2,
+.dropdown3,
+.dropdown4 {
+  font-size: clamp(0.3125rem, 0.1591rem + 0.8182vw, 0.875rem);
+  color: rgb(2, 2, 2);
+  transition: all 0.5s ease;
+  list-style: none;
+  background: #fff;
+  border-radius: 10px;
+  display: block;
+  padding: 0;
+  padding: 0.5rem;
+  line-height: 35px;
+  transform: translateY(-40%);
+  transition: all 1000ms;
+  opacity: 0;
+  background-color: #33708e42;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.dropdown11 {
+  font-weight: 400;
+  display: block;
+  transform: translateY(28%);
+  opacity: 1;
+}
+.dropdown12 {
+  font-weight: 400;
+  display: block;
+  opacity: 1;
+  transform: translateY(35%);
+}
+.dropdown13 {
+  font-weight: 400;
+  display: block;
+  opacity: 1;
+  transform: translateY(35%);
+}
+.dropdown14 {
+  font-weight: 400;
+  display: block;
+  transform: translateY(65%);
+  opacity: 1;
+}
+li ul li {
+  cursor: pointer;
+}
+li ul li:hover {
+  color: #fff;
+  font-weight: 600;
+  background-color: #0099e6;
+  transition: all 500ms;
+}
+
+i {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menubar {
+    width: 100%;
+  }
+
+  .logo-header {
+    width: 20%;
+    display: flex;
+
+    align-items: center;
+  }
+
+  i {
+    font-size: clamp(1.8125rem, -0.2705rem + 7.9091vw, 9.25rem);
+    opacity: 1;
+    padding-right: 2rem;
+    cursor: pointer;
+  }
+  .titel2 {
+    display: grid;
+    gap: 0.5rem;
+    background-color: transparent;
+    transition: all 1000ms;
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  .titelActive {
+    border-top: 3px solid #33708e;
+    transition: all 1000ms;
+    opacity: 1;
+    background-color:#9ab8c7b3;
+    transform: translateY(0%);
+    
+
+  }
+  #categori {
+    width: 100%;
+    max-height: 12px;
+    background: none;
+    box-shadow: none;
+    color: black;
+    font-size: 1rem;
+    padding: 1.2rem;
+    align-items: center;
+    border-radius: 3px;
+    padding-bottom: 2rem;
+    text-align: left;
+    
+   
+  }
+  #categori:hover {
+    background-color: #0099e6;
+    color: #ffffff;
+    width: 100%;
+  }
+ 
+
+  .dropdown1,
+  .dropdown2,
+  .dropdown3,
+  .dropdown4 {
+    width: 100%;
+    font-size: 16px;
+    color: rgb(245, 243, 243);
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    display: block;
+    transform: translateZ(-100%);
+
+    transition: all 1000ms;
+    opacity: 0;
+    background-color: #33708ef9;
+    
+   
+  }
+  .dropdown11 {
+    width: -150%;
+    transform: translateZ(100%);
+   
+ 
+    opacity: 1;
+  }
+  .dropdown12 {
+    
+    width: -150%;
+    opacity: 1;
+    transform: translateZ(100%);
+  }
+  .dropdown13 {
+    
+    width: -150%;
+    opacity: 1;
+    transform: translateZ(100%);
+  }
+  .dropdown14 {
+    
+    width: -150%;
+    transform: translateZ(100%);
+    opacity: 1;
+  }
+
+ 
+}
